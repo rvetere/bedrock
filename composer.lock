@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7bb86c8cef7add50067c0ca58cfad35c",
+    "hash": "0a1dd11e4b5b873d80dba9757d3249b0",
+    "content-hash": "8746fd16850cc893e9c72a50ab0d9423",
     "packages": [
         {
             "name": "composer/installers",
@@ -107,6 +108,103 @@
             "time": "2016-04-13 19:46:30"
         },
         {
+            "name": "danielstjules/stringy",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danielstjules/Stringy.git",
+                "reference": "4e214a5195fae3fb558e81b1c6010678f7600643"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/4e214a5195fae3fb558e81b1c6010678f7600643",
+                "reference": "4e214a5195fae3fb558e81b1c6010678f7600643",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/polyfill-mbstring": "~1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stringy\\": "src/"
+                },
+                "files": [
+                    "src/Create.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel St. Jules",
+                    "email": "danielst.jules@gmail.com",
+                    "homepage": "http://www.danielstjules.com"
+                }
+            ],
+            "description": "A string manipulation library with multibyte support",
+            "homepage": "https://github.com/danielstjules/Stringy",
+            "keywords": [
+                "UTF",
+                "helpers",
+                "manipulation",
+                "methods",
+                "multibyte",
+                "string",
+                "utf-8",
+                "utility",
+                "utils"
+            ],
+            "time": "2016-05-02 15:18:10"
+        },
+        {
+            "name": "ivome/graphql-relay-php",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivome/graphql-relay-php.git",
+                "reference": "75646f3e7f90596bb697ee1191beca40a197217e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivome/graphql-relay-php/zipball/75646f3e7f90596bb697ee1191beca40a197217e",
+                "reference": "75646f3e7f90596bb697ee1191beca40a197217e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4,<8.0-DEV",
+                "webonyx/graphql-php": ">=0.5.7,<0.7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8",
+                "satooshi/php-coveralls": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "description": "A PHP port of GraphQL Relay reference implementation",
+            "homepage": "https://github.com/ivome/graphql-relay-php",
+            "keywords": [
+                "Relay",
+                "api",
+                "graphql"
+            ],
+            "time": "2016-09-14 14:12:30"
+        },
+        {
             "name": "johnpbloch/wordpress",
             "version": "4.6.1",
             "source": {
@@ -190,6 +288,92 @@
                 "wordpress"
             ],
             "time": "2015-06-11 15:15:30"
+        },
+        {
+            "name": "mohiohio/graphql-wp",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tim-field/graphql-wp.git",
+                "reference": "73feeaf5d0924100e347d4259b8a3328168a72aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tim-field/graphql-wp/zipball/73feeaf5d0924100e347d4259b8a3328168a72aa",
+                "reference": "73feeaf5d0924100e347d4259b8a3328168a72aa",
+                "shasum": ""
+            },
+            "require": {
+                "danielstjules/stringy": "^2.3",
+                "ivome/graphql-relay-php": "^0.1.2",
+                "mohiohio/wordpress-lib": "^0.1",
+                "php": ">=5.6",
+                "webonyx/graphql-php": "^v0.6"
+            },
+            "require-dev": {
+                "analog/analog": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Mohiohio\\GraphQLWP\\": "/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Field",
+                    "email": "field.tim@gmail.com"
+                }
+            ],
+            "description": "A GraphQL endpoint for WordPress",
+            "time": "2016-09-20 20:34:48"
+        },
+        {
+            "name": "mohiohio/wordpress-lib",
+            "version": "0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mohiohio/wordpress-lib.git",
+                "reference": "8b7bfb60d13afdee785cb485d2c4ad7b21f60c3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mohiohio/wordpress-lib/zipball/8b7bfb60d13afdee785cb485d2c4ad7b21f60c3b",
+                "reference": "8b7bfb60d13afdee785cb485d2c4ad7b21f60c3b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mohiohio\\WordPress\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Field",
+                    "email": "field.tim@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "WordPress Utilities",
+            "homepage": "http://www.mohiohio.com",
+            "keywords": [
+                "library",
+                "php",
+                "wordpress"
+            ],
+            "time": "2016-06-28 01:57:03"
         },
         {
             "name": "oscarotero/env",
@@ -291,6 +475,65 @@
             "time": "2016-03-01 16:27:06"
         },
         {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "dff51f72b0706335131b00a7f49606168c582594"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
+                "reference": "dff51f72b0706335131b00a7f49606168c582594",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-05-18 14:26:46"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.4.0",
             "source": {
@@ -339,6 +582,44 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
+        },
+        {
+            "name": "webonyx/graphql-php",
+            "version": "v0.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webonyx/graphql-php.git",
+                "reference": "0c1ad084d4e9488b7ec72680f59316af34454964"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/0c1ad084d4e9488b7ec72680f59316af34454964",
+                "reference": "0c1ad084d4e9488b7ec72680f59316af34454964",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4,<8.0-DEV"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GraphQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "description": "A PHP port of GraphQL reference implementation",
+            "homepage": "https://github.com/webonyx/graphql-php",
+            "keywords": [
+                "api",
+                "graphql"
+            ],
+            "time": "2016-06-11 06:43:32"
         }
     ],
     "packages-dev": [
